@@ -11,7 +11,7 @@ import { ListEmpty } from "@/components/listEmpty";
 export function Home() {
   function creatNewTask() {
     if (!inputText.trim()) {
-      alert("Por favor, preencha o campo de texto.");
+      Alert.alert("Atenção","Por favor, preencha o campo de texto.");
       return;
     }
     setTarefa([...tarefas, inputText.trim()]);
